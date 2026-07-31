@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffaf3;
+  --foreground: #221512;
+
+  --color-mex-red: #d62828;
+  --color-mex-red-dark: #a11f1f;
+  --color-mex-black: #1a1210;
+  --color-mex-cream: #fffaf3;
+  --color-mex-green: #2c6e49;
+  --color-mex-gold: #f4a637;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mex-red: var(--color-mex-red);
+  --color-mex-red-dark: var(--color-mex-red-dark);
+  --color-mex-black: var(--color-mex-black);
+  --color-mex-cream: var(--color-mex-cream);
+  --color-mex-green: var(--color-mex-green);
+  --color-mex-gold: var(--color-mex-gold);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-baloo);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.bg-dots {
+  background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
